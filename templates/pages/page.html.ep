@@ -1,0 +1,11 @@
+% layout 'default';
+% title $title;
+<div class="articles">
+	<div class="article">
+		<h1><a href="/article/<%= $page->slug %>"><%= $page->title %></a></h1>
+		<h2><%= $page->author %>&mdash;<%= $page->posted %></h2>
+		<div class="contents">
+			<%== $page->contents %>
+		</div>
+	</div>
+</div>
