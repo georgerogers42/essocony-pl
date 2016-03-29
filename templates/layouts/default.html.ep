@@ -4,5 +4,9 @@
 	  <link rel="stylesheet" href="/css/style.css">
 	  <title><%= title %></title>
   </head>
-  <body><%= content %></body>
+  <body>
+	  <div class="masthead">
+		  <h1><a href="/">Essocony</a></h1>
+	  <%= content %>
+  </body>
 </html>
