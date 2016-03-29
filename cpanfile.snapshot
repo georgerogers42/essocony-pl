@@ -144,6 +144,17 @@ DISTRIBUTIONS
     requirements:
       DateTime 0.18
       DateTime::Format::Builder 0.77
+  DateTime-Format-Pg-0.16011
+    pathname: D/DM/DMAKI/DateTime-Format-Pg-0.16011.tar.gz
+    provides:
+      DateTime::Format::Pg 0.16011
+    requirements:
+      DateTime 0.10
+      DateTime::Format::Builder 0.72
+      DateTime::TimeZone 0.05
+      ExtUtils::MakeMaker 6.36
+      Module::Build 0.38
+      Test::More 0
   DateTime-Format-Strptime-1.66
     pathname: D/DR/DROLSKY/DateTime-Format-Strptime-1.66.tar.gz
     provides:

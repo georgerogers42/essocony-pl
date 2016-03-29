@@ -3,6 +3,6 @@ requires 'namespace::clean';
 requires 'Moo';
 requires 'Try::Tiny';
 requires 'DateTime';
-requires 'DateTime::Format::ISO8601';
+requires 'DateTime::Format::Pg';
 requires 'Starman';
 requires 'JSON';
