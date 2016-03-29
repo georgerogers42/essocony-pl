@@ -1,6 +1,5 @@
 % layout 'default';
 % title $title;
-<h1 class="masthead"><a href="/"><%= $title %></a></h1>
 <div class="articles">
 	<% for my $page (@$pages) { %>
 	<div class="article">
@@ -9,5 +8,6 @@
 		<div class="contents">
 			<%== $page->contents %>
 		</div>
+	</div>
 	<% } %>
 </div>

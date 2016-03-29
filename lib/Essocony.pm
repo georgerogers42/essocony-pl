@@ -13,6 +13,7 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('pages#home');
+  $r->get('/article/:slug')->to('pages#page');
 }
 
 1;

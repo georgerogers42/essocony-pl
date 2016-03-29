@@ -25,7 +25,7 @@ sub _build_pages {
 		push @pages, Essocony::Models::Page->new(%$meta, contents => $contents);
 		close $fh;
 	}
-	return [sort { $a->posted <=> $b->posted } @pages];
+	return [sort { $b->posted <=> $a->posted } @pages];
 }
 
 sub _build_page {

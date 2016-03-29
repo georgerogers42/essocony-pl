@@ -11,4 +11,11 @@ sub home {
   $self->render(title => "Essocony", pages => $pages->pages);
 }
 
+sub page {
+	my $self = shift;
+	my $slug = $self->stash->{slug};
+	my $page = $pages->page->{$slug};
+	$self->render(title => "Essocony&mdash;$slug", page => $page);
+}
+
 1;

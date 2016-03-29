@@ -7,6 +7,7 @@
   <body>
 	  <div class="masthead">
 		  <h1><a href="/">Essocony</a></h1>
+	  </div>
 	  <%= content %>
   </body>
 </html>
