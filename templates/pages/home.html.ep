@@ -8,6 +8,6 @@
 		<div class="contents">
 			<%== $page->contents %>
 		</div>
-	</div>
+		</div>
 	<% } %>
 </div>

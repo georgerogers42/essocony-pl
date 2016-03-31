@@ -137,13 +137,6 @@ DISTRIBUTIONS
       strict 0
       vars 0
       warnings 0
-  DateTime-Format-ISO8601-0.08
-    pathname: J/JH/JHOBLITT/DateTime-Format-ISO8601-0.08.tar.gz
-    provides:
-      DateTime::Format::ISO8601 0.08
-    requirements:
-      DateTime 0.18
-      DateTime::Format::Builder 0.77
   DateTime-Format-Pg-0.16011
     pathname: D/DM/DMAKI/DateTime-Format-Pg-0.16011.tar.gz
     provides:
