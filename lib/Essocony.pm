@@ -14,6 +14,7 @@ sub startup {
   # Normal route to controller
   $r->get('/')->to('pages#home');
   $r->get('/article/:slug')->to('pages#page');
+  $r->get('/articles.json')->to('pages#feed');
 }
 
 1;

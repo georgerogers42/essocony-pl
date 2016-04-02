@@ -7,7 +7,6 @@ my $pages = Essocony::Models::Pages->new(pat => "articles/*.html");
 # This action will render a template
 sub home {
   my $self = shift;
-
   $self->render(title => "Essocony", pages => $pages->pages);
 }
 
@@ -16,6 +15,12 @@ sub page {
 	my $slug = $self->stash->{slug};
 	my $page = $pages->page->{$slug};
 	$self->render(title => "Essocony&mdash;$slug", page => $page);
+}
+
+sub feed {
+  my $self = shift;
+  my $p = [map { {%{$_}} } @{$pages->pages}];
+	$self->render(json => $p);
 }
 
 1;
