@@ -40,7 +40,7 @@ sub _build_page {
 
 sub _build_data {
   my $self = shift;
-  [map { $_->data } @{$self->pages}];
+  return [map { $_->data } @{$self->pages}];
 }
 
 1;
