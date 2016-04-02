@@ -16,4 +16,15 @@ sub _build_posted {
 	DateTime::Format::Pg->parse_datetime($self->date);
 }
 
+sub data {
+  my $self = shift;
+  return
+    { title => $self->title,
+      author => $self->author,
+      slug => $self->slug,
+      date => $self->posted,
+      contents => $self->contents
+    };  
+}
+
 1;
