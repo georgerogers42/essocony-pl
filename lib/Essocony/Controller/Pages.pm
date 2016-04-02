@@ -19,8 +19,7 @@ sub page {
 
 sub feed {
   my $self = shift;
-  my $p = [map { $_->data } @{$pages->pages}];
-	$self->render(json => $p);
+	$self->render(json => $pages->data);
 }
 
 1;

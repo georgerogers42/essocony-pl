@@ -8,6 +8,7 @@ use namespace::clean;
 has pat => (is => 'ro');
 has pages => (is => 'lazy');
 has page => (is => 'lazy');
+has data => (is => 'lazy');
 
 sub _build_pages {
 	my $self = shift;
@@ -35,6 +36,11 @@ sub _build_page {
 		$pages{$page->slug} = $page;
 	}
 	return \%pages;
+}
+
+sub _build_data {
+  my $self = shift;
+  [map { $_->data } @{$self->pages}];
 }
 
 1;
