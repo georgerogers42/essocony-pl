@@ -24,7 +24,8 @@ sub _build_data {
       author => $self->author,
       slug => $self->slug,
       date => $self->posted,
-      contents => $self->contents
+      contents => $self->contents,
+      href => "/article/@{[$self->slug]}",
     };  
 }
 
