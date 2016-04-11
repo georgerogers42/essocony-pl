@@ -7,14 +7,14 @@ my $pages = Essocony::Models::Pages->new(pat => "articles/pub/*.html");
 # This action will render a template
 sub home {
   my $self = shift;
-  $self->render(title => "Essocony", pages => $pages->pages);
+  $self->render(title => "Mutt City", pages => $pages->pages);
 }
 
 sub page {
 	my $self = shift;
 	my $slug = $self->stash->{slug};
 	my $page = $pages->page->{$slug};
-	$self->render(title => "Essocony&mdash;$slug", page => $page);
+	$self->render(title => "Mutt City: $slug", page => $page);
 }
 
 sub feed {
